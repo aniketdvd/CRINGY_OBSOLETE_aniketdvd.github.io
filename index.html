@@ -1,24 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/materialize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="src/js/main.js"></script>
-    <script src="src/js/materialize.js"></script>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>AniketDVD | Portfolio</title>
 </head>
 <body>
-    <header>
-
+    <nav class="sidenav-trigger transparent z-depth-2">
+        <div class="nav-wrapper"> 
+            <a href="#!" class="brand-logo">AniketDVD</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#!">Works</a></li>
+                <li><a href="#!">Contact</a></li>
+                <li><a href="#!">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#!" class="white-text">Works</a></li>
+        <li><a href="#!" class="white-text">Contact</a></li>
+        <li><a href="#!" class="white-text">About</a></li>
+    </ul>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });
+    </script>
+    <header class="grey darken-2 white-text center">
+        <div class="text">
+            <h1>AniketDVD</h1>
+            <h4>A web developer and an open source enthusiast</h4>
+        </div>
     </header>
-    <!---->
+     
     <main>
-        
+       <div class="container center whoisme red darken-2 white-text z-depth-2">
+           <p>Heyya! This is Aniket Dwivedi. <br/>I'm a teen who loves to make web.</p>
+       </div>
+       <div class="container darken-1 grey-text whoisme center z-depth-2">
+           <h5>The guys whom I work with</h5>
+           <div class="row center">
+                <div class="col s4 ic-padded"><img src="./img/icons/512px-HTML5_logo_and_wordmark.svg" alt="" class="icon-big"></div>
+                <div class="col s4 ic-padded"><img src="./img/icons/CSS3_logo_and_wordmark.svg" alt="" class="icon-big"></div>
+                <div class="col s4 ic-padded"><img src="./img/icons/Unofficial_JavaScript_logo_2.svg" alt="" class="icon-big"></div>
+                <div class="col s6 ic-padded"><img src="./img/icons/drupal 8 logo isolated CMYK 72.png" alt="" class="icon-big"></div>
+                <div class="col s6 ic-padded"><img src="./img/icons/electron.png" alt="" class="icon-big"></div>
+                
+       </div>
     </main>
     <!---->
-    <footer>
-
-    </footer>
+    <footer class="page-footer red z-depth-1-half">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">Thanks for visiting!</h5>
+                  <p class="grey-text text-lighten-4">Let's be friends. You can use the links provided to get in touch with me.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <ul>
+                    <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/aniketdvd"><img src="./img/icons/instagram.svg" alt="aniketdvd" class="icon-small"></a></li>
+                    <li><a class="grey-text text-lighten-3" href="https://www.twitter.com/aniketdwivedi15"><img src="./img/icons/twitter.svg" alt="aniketdwivedi15" class="icon-small"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+              © 2019 Copyright - Aniket Dwivedi
+              <a class="grey-text text-lighten-4 right" href="mailto:dwi.aniket@gmail.com"><img src="./img/icons/gmail.svg" alt="" class="icon-small"></a>
+              </div>
+            </div>
+          </footer>
 </body>
 </html>
