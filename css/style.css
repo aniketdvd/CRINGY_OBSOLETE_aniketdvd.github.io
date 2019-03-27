@@ -28,6 +28,9 @@ header{
     background-attachment: fixed;
     padding-bottom: 100px;
 }
+header h1{
+    font-size: 10vw;
+}
 .main-h{
     height: 300px;
 }
@@ -42,7 +45,7 @@ header{
     color: #ffffff;
 }
 .sidenav{
-    background: url('./../img/mainbg.jpg');
+    background-color: black;
     background-size: cover;
 }
 main{
@@ -86,11 +89,16 @@ body{
 }
 .text {
     color: white;
-    padding-top: 160px;
-    padding-bottom: 160px;
-    background: rgb(59, 2, 6, 1);
+    padding-top: 75px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-bottom: 75px;
     mix-blend-mode: multiply;
+    background:#111111;
   }
 main{
     margin-top: -100px;
+}
+.center{
+    border-radius: 3pt;
 }
