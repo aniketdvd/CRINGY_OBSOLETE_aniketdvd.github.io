@@ -2,10 +2,13 @@
     font-family: proxima-bold;
     src: url('./../fonts/FontsFree-Net-Proxima-Nova-Bold.otf');
 }
+html{
+    scroll-behavior: smooth;
+}
 *{
     font-family: proxima-bold;
-    font-size: 20px;
     margin: 0;
+    font-size: 20px;
     padding: 0;
 }
 nav{
@@ -35,12 +38,6 @@ header{
     background-image: url('./../img/mainbg.jpg');
     background-size: cover;
 }
-.t1-colt{
-    vertical-align: middle;
-    overflow: hidden;
-    font-size: 30px;
-    color: #ffffff;
-}
 .sidenav{
     background-image: url('./../img/mainbg.jpg');
     background-size: cover;
@@ -57,6 +54,9 @@ nav{
 header{
     width: 100%;
 }
+header h1{
+    font-size: 80px;
+}
 footer{
     overflow: hidden;
     width: 100%;
@@ -64,9 +64,6 @@ footer{
 .whoisme{
     padding-top: 20px;
     padding-bottom: 20px;
-}
-.whoisme p{
-    font-size: 28px;
 }
 .icon-small{
     height: 60px;
@@ -79,23 +76,35 @@ footer{
 .ic-padded{
     margin-top: 100px;
 }
+.in-container{
+    margin-left: 22px;
+    margin-right: 22px;
+}
 body{
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
-.text {
+.text{
     color: white;
     padding-top: 75px;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     padding-bottom: 75px;
     mix-blend-mode: multiply;
     background:#111111;
-  }
+}
 main{
     margin-top: -100px;
 }
 .center{
     border-radius: 3pt;
+}
+.section-1, .section-2{
+    margin-bottom: 50px;
+}
+.section-2 .container{
+    background-image: url('./../img/archive-header_v3.png');
+    background-size: cover;
+    text-shadow: 1px 1px 2px rgba(30,30,30,0.54);
 }
